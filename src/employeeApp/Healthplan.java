@@ -1,0 +1,28 @@
+package employeeApp;
+
+public class Healthplan {
+    private long id;
+    private String name;
+    private enum plan {NAME, PRICE}
+
+    public long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Healthplan(long id, String name){
+       setId(id);
+       setName(name);
+    }
+}
